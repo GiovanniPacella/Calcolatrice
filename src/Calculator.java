@@ -1,6 +1,14 @@
 public class Calculator {
-    private int n1, n2;
+    private Integer n1, n2;
     private String operatore;
+
+    public void setN(int n){
+        if(this.n1.equals(null)){
+            this.n1=n;
+        }else{
+            this.n2=n;
+        }
+    }
 
     public int getN1() {
         return n1;
@@ -44,6 +52,10 @@ public class Calculator {
                 risultato=Differenza();
                 break;
         }
+
+        n1=null;
+        n2=null;
+
         return risultato;
     }
 }
