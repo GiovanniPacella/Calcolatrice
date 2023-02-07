@@ -26,22 +26,22 @@ public class Calculator {
         this.operatore = operatore;
     }
 
-    public int Somma(int a, int b){
-        return a+b;
+    public int Somma(){
+        return this.n1+this.n2;
     }
 
-    public int Differenza(int a, int b){
-        return a-b;
+    public int Differenza(){
+        return this.n1-this.n2;
     }
 
     public int uguale(){
         int risultato=0;
         switch(this.operatore){
             case "+":
-                risultato=Somma(this.n1, this.n2);
+                risultato=Somma();
                 break;
             case "-":
-                risultato=Differenza(this.n1, this.n2);
+                risultato=Differenza();
                 break;
         }
         return risultato;
