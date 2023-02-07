@@ -1,6 +1,7 @@
 public class Calculator {
     private Integer n1, n2;
-    private String operatore;
+    private String operatore="";
+
 
     public void setN(int n){
         if(this.n1.equals(null)){
