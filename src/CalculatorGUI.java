@@ -4,7 +4,7 @@
 import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
-class calculator extends JFrame implements ActionListener {
+class calculatorGUI extends JFrame implements ActionListener {
     // create a frame
     static JFrame f;
 
@@ -15,7 +15,7 @@ class calculator extends JFrame implements ActionListener {
     String s0, s1, s2;
 
     // default constructor
-    calculator()
+    calculatorGUI()
     {
         s0 = s1 = s2 = "";
     }
@@ -35,7 +35,7 @@ class calculator extends JFrame implements ActionListener {
         }
 
         // create a object of class
-        calculator c = new calculator();
+        calculatorGUI c = new calculatorGUI();
 
         // create a textfield
         l = new JTextField(16);
